@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(-33deg, #f05d19, #649cf0);
+}
+button
+{
+     background: linear-gradient(-33deg, #f05d19, #649cf0);
+     cursor:pointer;
+}
+button:hover
+{
+    background-color: gray;
+}
+section
+{
+    border-style: solid;
+    border-color: black;
+    
+}
+input
+{
+    border-style: solid;
+    border-color: black;
+}

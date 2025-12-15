@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title >Message Board</title>
+    <link rel = "icon" type="image/x-icon" href="/images/MessageBoard.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <h1 id="Login header">Welcome to MessageBoard!</h1>
+    <p id="Login text">Please log in and then you may use the service!</p>
+    <p hidden id="Error text" style="color: red;"></p>
+    <br>
+</head>
+<body>
+    
+    <div id = "username box">
+        Username <input type="text" name="name" id="username">
+    </div>
+    <div id="password box">
+        Password <input type="password" name="password" id="password">
+    </div>
+    <div id="login button">
+        <button id="login" onclick="login_button()"> Login! </button>
+    </div>
+    <p id="Register text">Dont have an account? Please register here!</p>
+    <div id = "Register button">
+        <button id="Register" onclick="register_Button()"> Register </button>
+    </div>
+    <div style="text-align: right;" hidden id="Logout button">
+        <button id="Logout" onclick="logout_Button()"> Logout Here </button>
+    </div>
+    <div style="text-align: right;" hidden id="getMessageDiv">
+        input filter by last X messages: <input type="text" name="filter" id="filterbox"> 
+        <button id= filterbutton onclick="filterMessageRequest()">Submit</button>
+    </div>
+    <!--Section for messages to go in-->
+    <div hidden id="MessageBoard">
+         <div style="text-align: left;">
+            Type a Message here: <input type="text" name = "Message" id="message">
+            <button id="SubmitMessage" onclick="submit_Message_Button()"> Post Message </button>
+        </div>
+        <section id = "MessageBoardBox">
+            <p id = messagetext></p>
+        </section>
+           
+    </div>
+    
+    
+<script src="/js/Main.js">
+</script>
+
+</body>
+</html>
